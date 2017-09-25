@@ -105,13 +105,13 @@ test('#setDisabled sets icon tabindex to 0 when set to false', () => {
   td.verify(mockAdapter.setIconAttr('tabindex', '0'));
 });
 
-test('#setValid adds mdc-textfied--invalid when set to false', () => {
+test('#setValid adds mdc-textfield--invalid when set to false', () => {
   const {foundation, mockAdapter} = setupTest();
   foundation.setValid(false);
   td.verify(mockAdapter.addClass(cssClasses.INVALID));
 });
 
-test('#setValid removes mdc-textfied--invalid when set to true', () => {
+test('#setValid removes mdc-textfield--invalid when set to true', () => {
   const {foundation, mockAdapter} = setupTest();
   foundation.setValid(true);
   td.verify(mockAdapter.removeClass(cssClasses.INVALID));
